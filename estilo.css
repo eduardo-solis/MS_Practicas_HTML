@@ -1,0 +1,42 @@
+body {
+    background-color: #FFE5F4;
+}
+
+h1, h2, h3, h4, th, td, dl, label, p, a {
+    color: #1F4E79;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    border: #FF77C8;
+}
+
+.inp {
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.inpTA {
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.inpCB{
+    border-radius: 10px;
+    height: 20px;
+    width: 30px;
+}
+
+#imagen {
+    width: 800px;
+    height: 450px;
+    margin-left: 250px;
+}

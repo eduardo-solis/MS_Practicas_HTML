@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MagiCake</title>
+    <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
 
@@ -16,11 +17,11 @@
 
     <hr>
     <h1>MagiCake - Creando los pasteles que desees</h1><br>
-    <img src="./logo_negro.png" alt="Logo de MagiCake" width="300px;" height="300px;">
+    <img id="imagen" src="./1.png" alt="Logo de MagiCake" >
     
     <br>
     <h2>Nos encuentras en: </h2><br>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.9677759428528!2d-100.1583315499686!3d25.63919498361249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c229fe50ae85%3A0xf2b0664630b78c91!2sCin%C3%A9polis%20San%20Roque!5e0!3m2!1ses-419!2smx!4v1646152964497!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe id="imagen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.9677759428528!2d-100.1583315499686!3d25.63919498361249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c229fe50ae85%3A0xf2b0664630b78c91!2sCin%C3%A9polis%20San%20Roque!5e0!3m2!1ses-419!2smx!4v1646152964497!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <br>
 
     <h2>Contactanos!</h2>
@@ -28,7 +29,7 @@
     <h4>Teléfono: 2345678901</h4>
     <h4>Horarios</h4>
 
-    <table border="1">
+    <table border="3">
         <tr>
             <th>Dias</th>
             <th>Horario</th>
@@ -42,8 +43,6 @@
             <th>09:00 am - 02:00 pm</th>
         </tr>
     </table>
-
-    
 
     <hr>
     <h3>Checa nuestros sabores y accesosrios para crear tu pastel como prefiera</h3>
@@ -80,49 +79,49 @@
     <form action="">
 
         <label for="nombre">Nombre</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br><br>
+        <input class="inp" type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"><br><br>
 
         <label for="telefono">Teléfono</label><br>
-        <input type="tel" name="telefono" id="telefono" maxlength="10" placeholder="0123456789"><br><br>
+        <input class="inp" type="tel" name="telefono" id="telefono" maxlength="10" placeholder="0123456789"><br><br>
 
         <label for="correo">Correo electrónico</label><br>
-        <input type="email" name="correo" id="correo" placeholder="correo@correo.com"><br><br>
+        <input class="inp" type="email" name="correo" id="correo" placeholder="correo@correo.com"><br><br>
 
         <label for="descripcion">Descripción del pastel</label><br>
-        <textarea name="descripcion" id="descripcion" cols="50" rows="6" placeholder="Describe tu pastel"></textarea><br><br>
+        <textarea class="inpTA" name="descripcion" id="descripcion" cols="50" rows="6" placeholder="Describe tu pastel"></textarea><br><br>
 
         <p>Selecciona los sabores de pasteles que desees</p>
 
-        <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+        <input class="inpCB" type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
         <label for="vainilla">Vainilla</label><br>
-        <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+        <input class="inpCB" type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
         <label for="chocolate">Chocolate</label><br>
-        <input type="checkbox" id="fresa" name="fresa" value="Fresa">
+        <input class="inpCB" type="checkbox" id="fresa" name="fresa" value="Fresa">
         <label for="fresa">Fresa</label><br>
-        <input type="checkbox" id="napolitano" name="napolitano" value="Napolitano">
+        <input class="inpCB" type="checkbox" id="napolitano" name="napolitano" value="Napolitano">
         <label for="napolitano">Napolitano</label><br>
-        <input type="checkbox" id="limón" name="limón" value="Limón">
+        <input class="inpCB" type="checkbox" id="limón" name="limón" value="Limón">
         <label for="limón">Limón</label><br>
-        <input type="checkbox" id="oreo" name="oreo" value="Oreo">
+        <input class="inpCB" type="checkbox" id="oreo" name="oreo" value="Oreo">
         <label for="oreo">Oreo</label><br>
-        <input type="checkbox" id="café" name="café" value="Café">
+        <input class="inpCB" type="checkbox" id="café" name="café" value="Café">
         <label for="café">Café</label><br>
 
         <p>Selecciona los adornos para el pastel</p>
 
-        <input type="checkbox" id="rosas" name="rosas" value="Rosas">
+        <input class="inpCB" type="checkbox" id="rosas" name="rosas" value="Rosas">
         <label for="rosas">Rosas</label><br>
-        <input type="checkbox" id="estrellas" name="estrellas" value="Estrellas">
+        <input class="inpCB" type="checkbox" id="estrellas" name="estrellas" value="Estrellas">
         <label for="estrellas">Estrellas</label><br>
-        <input type="checkbox" id="corazones" name="corazones" value="Corazones">
+        <input class="inpCB" type="checkbox" id="corazones" name="corazones" value="Corazones">
         <label for="corazones">Corazones</label><br>
-        <input type="checkbox" id="figuritas" name="figuritas" value="Figuritas">
+        <input class="inpCB" type="checkbox" id="figuritas" name="figuritas" value="Figuritas">
         <label for="figuritas">Figuritas</label><br>
 
         <br><br>
 
-        <input type="reset" value="Limpiar">
-        <input type="submit" value="Hacer pedido" onclick="alert('El pedido se ha registrado correctamente')">
+        <input class="inp" type="reset" value="Limpiar">
+        <input class="inp" type="submit" value="Hacer pedido" onclick="alert('El pedido se ha registrado correctamente')">
 
         <br><br>
     </form>
